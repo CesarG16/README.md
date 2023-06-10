@@ -1,8 +1,16 @@
-## CESAR AUGUSTO GONZALEZ INFANTE
-## DHT22 
+# Practica ESP32 con DHT11
+Este repositorio muestra como podemos programar una ESP32 con el sensor DHT11.
+
+## Introducción
+
+### Descripción
+
+La ```Esp32``` la utilizamos en un entorno de adquision de datos, lo cual en esta practica ocuparemos un sensor (```DTH11```) para adquirir temperatura y humedad del entorno; Cabe aclarar que esta practica se usara un simulador llamado [WOKWI](https://https://wokwi.com/).
+
+
 ## Material Necesario
 
-Para realizar esta practica se usaran los siguientes elementos:
+Para realizar esta practica necesitas lo siguiente
 
 - [WOKWI](https://https://wokwi.com/)
 - Tarjeta ESP 32
@@ -23,7 +31,7 @@ Para poder usar este repositorio necesitas entrar a la plataforma [WOKWI](https:
 
 ```
 #include "DHTesp.h"
-
+#include <LiquidCrystal_I2C.h>
 
 const int DHT_PIN = 15;
 DHTesp dhtSensor;
@@ -45,15 +53,13 @@ void loop() {
 }
 
 ```
-
 2. Instalar la libreria de **DHT sensor library for ESPx** como se muestra en la siguente imagen.
 
-![](https://github.com/CesarG16/DHT22/blob/main/eje1.png?raw=true)
+![](https://github.com/DiegoJm10/PracticaDHT/blob/main/Libreria%20DHT.png?raw=true)
 
 3. Hacer la conexion de **DHT11** con la **ESP32** como se muestra en la siguente imagen.
 
-![](https://github.com/CesarG16/DHT22/blob/main/eje3.png?raw=true)
-
+![](https://github.com/DiegoJm10/PracticaDHT/blob/main/New%20ESP32%20Project%20-%20Wokwi%20Simulator%20-%20Google%20Chrome%2008_06_2023%2011_10_20%20p.%20m.%20(2).png?raw=true)
 
 ### Instrucciónes de operación
 
@@ -65,18 +71,18 @@ void loop() {
 
 Cuando haya funcionado, verás los valores dentro del monitor serial como se muestra en la siguente imagen.
 
-![](https://github.com/CesarG16/DHT22/blob/main/eje4.png?raw=true)
+![](https://github.com/DiegoJm10/PracticaDHT/blob/main/New%20ESP32%20Project%20-%20Wokwi%20Simulator%20-%20Google%20Chrome%2008_06_2023%2011_10_20%20p.%20m..png?raw=true)
 
 
 
 
 ## Evidencias
 
-[Página](https://wokwi.com/projects/367161515424976897)
+[Video de Youtube](https://https://wokwi.com/)
 
 
 # Créditos
 
-Desarrollado por Ing. Cesar Augusto Gonzalez Infante
+Desarrollado por Ing. Diego Jasso Miranda
 
-- [GitHub](https://github.com/CesarG16)
+- [GitHub](https://github.com/DiegoJm10)
